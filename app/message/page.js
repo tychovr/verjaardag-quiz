@@ -29,7 +29,7 @@ const Message = () => {
         isClosable: false,
       });
 
-      router.push("/quiz");
+      // router.push("/quiz");
     }
   });
 
@@ -48,10 +48,14 @@ const Message = () => {
       }}
     >
       <Heading color={"#f5f5f5f5"}>De Boodschap</Heading>
-      <Box>
+      <Box
+        style={{
+          border: "1px solid #f5f5f5f5",
+        }}
+      >
         <iframe
-          width="840"
-          height="472.5"
+          height="394"
+          width="700"
           src="https://www.youtube.com/embed/JCvFZUSiENQ?si=yPy4WDILvzWQZDbK?fs=1&enablejsapi=1&enablecastapi=1"
           title="YouTube video player"
           frameborder="0"
