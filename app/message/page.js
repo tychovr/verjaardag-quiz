@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Heading, Text, Highlight, Button, Box, useToast, AspectRatio } from "@chakra-ui/react";
+import { Heading, Box, useToast } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
 import { useResults } from "../context/resultsContext";
 import { quizData } from "../quizData";
@@ -18,20 +18,21 @@ const Message = () => {
     },
   });
 
-  // React.useEffect(() => {
-  //   console.log(results + " " + totalQuestions);
-  //   if (results !== totalQuestions) {
-  //     toast({
-  //       title: "NICE TRY FOOL!",
-  //       description: "Ik denk aan alle cheat trucjes, helaas voor jou! :)",
-  //       status: "error",
-  //       duration: 5000,
-  //       isClosable: false,
-  //     });
+  React.useEffect(() => {
+    console.log(results + " " + totalQuestions);
+    if (results !== totalQuestions) {
+      toast({
+        title: "NICE TRY FOOL!",
+        description: "Ik denk aan alle cheat trucjes, helaas voor jou! :)",
+        status: "error",
+        duration: 5000,
+        isClosable: false,
+      });
 
-  //     router.push("/quiz");
-  //   }
-  // });
+      router.push("/quiz");
+    }
+  });
+
   return (
     <Box
       style={{

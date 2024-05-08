@@ -2,7 +2,7 @@
 
 import React from "react";
 import { quizData } from "../quizData";
-import { Box, Button, Heading, Highlight, Text, useToast } from "@chakra-ui/react";
+import { Box, Button, Heading, Text, useToast } from "@chakra-ui/react";
 import { useResults } from "../context/resultsContext";
 import { useRouter } from "next/navigation";
 
@@ -13,7 +13,7 @@ const QuizPage = () => {
   const [shuffledAnswers, setShuffledAnswers] = React.useState([]);
 
   const router = useRouter();
-  const { setResults, results } = useResults();
+  const { setResults } = useResults();
   const { questions, totalQuestions } = quizData;
   const { question, answers, correctAnswer, correctAnswerMessage } = questions[currentQuestion];
 
