@@ -25,6 +25,11 @@ const QuizPage = () => {
     },
   });
 
+  async function playSound(url) {
+    const audio = new Audio(url);
+    audio.play();
+  }
+
   const showToast = async (answer) => {
     if (answer === correctAnswer) {
       toast({
@@ -35,13 +40,17 @@ const QuizPage = () => {
         isClosable: false,
       });
     }
+
     if (answer === "Arnhem") {
+      playSound("/vitesse-volkslied.mp3");
       anrhemAnswer();
       return;
     } else if (answer === "Wielrennen") {
+      playSound("/oprotten-buitenlander.mp3");
       wielrennerAnswer();
       return;
     } else if (answer === "Mercedes") {
+      playSound("/hamilton.mp3");
       mercedesAnswer();
       return;
     }
