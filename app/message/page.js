@@ -29,7 +29,7 @@ const Message = () => {
         isClosable: false,
       });
 
-      // router.push("/quiz");
+      router.push("/quiz");
     }
   });
 
