@@ -25,14 +25,14 @@ export const quizData = {
     {
       id: 4,
       question: "Wat is mijn favoriete eten?:",
-      answers: ["Pizza", "Biefstuk", "Paarden", "Single Big Tasty"],
+      answers: ["Pizza", "Biefstuk", "Frikandellen", "Single Big Tasty"],
       correctAnswer: "Pizza",
       correctAnswerMessage: "Italiaanse keuken he",
     },
     {
       id: 5,
       question: "Wat doe ik 's avonds het liefst?:",
-      answers: ["Gamen", "Film kijken", "Paarden eten", "Neuken"],
+      answers: ["Gamen", "Film kijken", "Slapen", "Frikandellen eten"],
       correctAnswer: "Gamen",
       correctAnswerMessage: "Verbaasd 't je?",
     },
